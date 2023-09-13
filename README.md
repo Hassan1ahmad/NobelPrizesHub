@@ -7,7 +7,9 @@ Welcome to NobelPrizesHub, your one-stop platform to explore and learn about Nob
 Explore NobelPrizesHub live [here](https://hassan1ahmad.github.io/nobelprizeshub/).
 
 🧪 Categorized Views: Browse Nobel Prizes based on categories such as Physics, Chemistry, Literature, and more.
+
 📅 Yearly Insights: Filter winners based on specific years or date ranges.
+
 🌐 Responsive Design: Fully optimized for all devices, from mobile to desktop.
 
 
@@ -18,7 +20,7 @@ Explore NobelPrizesHub live [here](https://hassan1ahmad.github.io/nobelprizeshub
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contribution](#contribution)
-- [License](#license)
+
 
 ## Description
 
