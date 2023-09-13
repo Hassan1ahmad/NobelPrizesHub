@@ -1,0 +1,265 @@
+.custom-width {
+  width: 200px; 
+}
+.custom-padding{
+  padding-top: 20px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+}
+.col > .form-text {
+    position: absolute;
+    bottom: 61px;
+    left: 362px;
+}
+.padding-left{
+  padding-left: 26rem;
+}
+.card-text {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.link-secondary:hover{
+  text-decoration: underline !important
+}
+
+
+.top-margin{
+  margin-top: 56px;
+}
+
+.subject-link:hover {
+  text-decoration: none;  /* Remove underline on hover */
+  background-color: #d9dcdf;  /* Light gray from Bootstrap's color palette */
+  transition: background-color 0.3s ease;
+}
+
+/* Maintain the underline effect on focus for accessibility */
+.subject-link:focus {
+  text-decoration: underline;
+}
+.navbar .navbar-nav .nav-link.active {
+  color: #3a9ee1; /* Replace with your desired color */
+}
+/* ----spinner----- */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  /* This ensures the container takes the full height of the viewport */
+  width: 100vw;   /* This ensures the container takes the full width of the viewport */
+  position: absolute; 
+  top: 0; 
+  left: 0;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 8vmax;
+  height: 8vmax;
+  border-right: 4px solid #673AB7;
+  border-radius: 100%;
+  animation: spinRight 800ms linear infinite;
+  
+  &:before, &:after {
+    content: '';
+    width: 6vmax;
+    height: 6vmax;
+    display: block;
+    position: absolute;
+    top: calc(50% - 3vmax);
+    left: calc(50% - 3vmax);
+    border-left: 3px solid #673AB7;
+    border-radius: 100%;
+    animation: spinLeft 800ms linear infinite;
+  }
+  
+  &:after {
+    width: 4vmax;
+    height: 4vmax;
+    top: calc(50% - 2vmax);
+    left: calc(50% - 2vmax);
+    border: 0;
+    border-right: 2px solid #673AB7;
+    animation: none;
+  }
+}
+
+@keyframes spinLeft {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(720deg);}
+}
+
+@keyframes spinRight {
+  from {transform:rotate(360deg);}
+  to {transform:rotate(0deg);}
+}
+
+/* ----------dark themes--------- */
+.dark-home{
+  background-color: #181B1F;
+    border: 1px solid wheat;
+    color: white;
+}
+.dark-home:hover{
+  background-color: rgb(91, 91, 91);
+  transition: background-color 0.3s ease;
+}
+.dark-background{
+  background-color: #181B1F;
+  color: #F5F5F5;
+}
+.dark-input, .dark-select {
+  background-color: #333; /* dark background */
+  color: #fff; /* light text */
+  border: 1px solid #444; /* slightly lighter border for a subtle outline */
+  padding: 8px 12px; /* some padding for aesthetics */
+  font-size: 1rem; /* adjust as needed */
+}
+
+/* Placeholder color for inputs if you have placeholders */
+.dark-input::placeholder {
+  color: #777; /* slightly lighter than the input bg but darker than the text color */
+}
+
+/* Styling for the dropdown options of the select field */
+.dark-select option {
+  background-color: #555; /* slightly lighter than the select background */
+  color: #fff; /* white text */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------footer----- */
+.footer {
+  background-color: #2B3035; /* Footer background color */
+  padding: 13px 0;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 181px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-info h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.title {
+  font-size: 18px;
+}
+
+.contact {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.footer-links ul li {
+  margin-right: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 35px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00bcd4; /* Adjust if needed */
+}
+
+.footer-icons {
+  margin-top: 20px;
+}
+
+.footer-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.footer-icons a:hover {
+  color: #00bcd4; /* Adjust if needed */
+}
+
+.footer-copyright {
+  background-color: #23272B; /* Copyright background color */
+  padding: 10px 0;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 280px) and (max-width: 768px) {
+  .custom-padding{
+    padding: 0px;
+  }
+  
+  .padding-left{
+    padding-left: 0px;
+  }
+  .custom-width{
+    width: 150px;
+  }
+  
+  
+}
+
+
+
+
