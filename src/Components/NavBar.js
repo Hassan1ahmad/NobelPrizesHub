@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink,Link } from 'react-router-dom'
 
 export default function NavBar(props) {
   const closeNavbar = () => {
@@ -16,14 +16,14 @@ export default function NavBar(props) {
   return (
     <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary" data-bs-theme={props.mode}>
   <div className="container-fluid">
-    <a className="navbar-brand" href="/">NobelPrizesHub</a>
+    <Link className="navbar-brand" to="/">NobelPrizesHub</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <NavLink className="nav-link " onClick={closeNavbar}  exact to="/">Home</NavLink>
+          <NavLink className="nav-link " onClick={closeNavbar}  to="/">Home</NavLink>
         </li>
         <li className="nav-item">
           <NavLink className="nav-link" onClick={closeNavbar}  to="/chemistry">Chemistry</NavLink>
@@ -41,9 +41,9 @@ export default function NavBar(props) {
           <NavLink className="nav-link" onClick={closeNavbar}  to="/search manually">Search Manually</NavLink>
         </li>
       </ul>
-            <div class={`form-check text-${props.mode === 'light'? 'dark' : 'light'}`}>
-        <input class="form-check-input" type="checkbox"  onClick={props.togglemode} value="" id="flexCheckDefault"/>
-        <label class="form-check-label" for="flexCheckDefault">
+            <div className={`form-check text-${props.mode === 'light'? 'dark' : 'light'}`}>
+        <input className="form-check-input" type="checkbox"  onClick={props.togglemode} value="" id="flexCheckDefault"/>
+        <label className="form-check-label" htmlFor="flexCheckDefault">
          Enable Dark Mode
         </label>
       </div>

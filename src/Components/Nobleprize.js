@@ -366,8 +366,8 @@ export default function Nobleprize(props) {
       <div className="row d-flex align-items-stretch">
         {Loading ? (
           <>
-            <div class={`spinner-container ${props.mode === 'dark'? 'dark-background':''}`}>
-             <div class="spinner"></div>
+            <div className={`spinner-container ${props.mode === 'dark'? 'dark-background':''}`}>
+             <div className="spinner"></div>
           </div>
             <div className="text-center fw-medium">Loading. . .</div>
           </>

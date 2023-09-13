@@ -67,7 +67,7 @@ export default function Manually(props) {
             onChange={(e) => setCatagory(e.target.value)}
             aria-label="Default select example"
           >
-            <option selected>---Select Subject---</option>
+            <option defaultValue={'---Select Subject---'}>---Select Subject---</option>
             <option value="che">Chemistry</option>
             <option value="eco">Economics</option>
             <option value="phy">Physics</option>
@@ -137,7 +137,7 @@ export default function Manually(props) {
               ? "Physic"
               : Catagory === "lit"
               ? "Literature"
-              : Catagory}{" "}
+              : Catagory === '---Select Subject---'? '' : Catagory} 
             from {YearFrom} to {YearTo}
           </h1>
         </div>
