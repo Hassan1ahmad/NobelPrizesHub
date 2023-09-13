@@ -39,7 +39,7 @@ function App() {
         
       />
         <Switch>
-          <Route path='/'><Home mode={mode} setProgress={setProgress}/></Route>
+          <Route exact path='/'><Home mode={mode} setProgress={setProgress}/></Route>
           <Route exact path="/economics"><Nobleprize mode={mode} setProgress={setProgress} subjectname={'Economics'}  key={'economics'} subject={'eco'}/></Route>
           <Route exact path="/chemistry"><Nobleprize mode={mode} setProgress={setProgress} subjectname={'Chemistry'} key={'chemistry'} subject={'che'}/></Route>
           <Route exact path="/physics"><Nobleprize mode={mode} setProgress={setProgress} subjectname={'Physics'} key={'physic'} subject={'phy'}/></Route>
