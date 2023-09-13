@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className='wrapper'>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
         <NavBar togglemode={togglemode} mode={mode}/>
         <div className='content'>
         <LoadingBar
